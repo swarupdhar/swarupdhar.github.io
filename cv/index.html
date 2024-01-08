@@ -4,162 +4,161 @@
         <title>Swarup Dhar</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous">
-        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+
     </head>
     <body>
-
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3">
-            <div class="container-md">
-                <a class="navbar-brand fs-5" href="/">Swarup Dhar</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto fs-5">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/posts">Posts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/research">Research</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/cv">CV</a>
-                        </li>
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar__logo"><a href="/">Swarup Dhar</a></div>
+                    <div class="navbar__menu-btn" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navbar__items">
+                        <li><a href="/posts">Posts</a></li>
+                        <li><a href="/research">Research</a></li>
+                        <li><a href="/cv">CV</a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-
-        <div class="">
+            </nav>
+            <ul class="navbar__items--mobile">
+                <li><a href="/posts">Posts</a></li>
+                <li><a href="/research">Research</a></li>
+                <li><a href="/cv">CV</a></li>
+            </ul>
+        </header>
+        <main>
             
 
-<div class="container mb-5 fs-5">
-    <div class="row text-center">
-        <p class="text-center"><h1>CV</h1></p>
-    </div>
+<div class="cv container">
+    <section id="cv__header">
+        <!-- <h1>Swarup Dhar</h1> -->
+    </section>
 
-    <div class="row mt-3 text-md-start">
-        <h2>Education</h2>
-    </div>
-
-    <div class="row">
-        <div class="col-md-8 text-md-start">
-            <b>Washington University in St. Louis</b> <br>
-            Mathematics PhD student
+    <section id="cv__education">
+        <h1>Education</h1>
+        <div class="cv__entry">
+            <div class="cv__entry__title">
+                Washington University in St. Louis
+            </div>
+            <div class="cv__entry__date">
+                August 2022 to Present
+            </div>
+            <div class="cv__entry__desc">
+                Mathematics PhD Student
+            </div>
         </div>
-        <div class="col-md-4 text-md-end">August 2022 to Present</div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-8 text-md-start">
-            <b>Bucknell University</b> <br>
-            B.S. in Computer Science & Engineering, B.A. in Mathematics
+        <div class="cv__entry">
+            <div class="cv__entry__title">
+                Bucknell University
+            </div>
+            <div class="cv__entry__date">
+                August 2018 to 2022
+            </div>
+            <div class="cv__entry__desc">
+                B.S. in Computer Science &amp; Engineering, B.A. in Mathematics 
+            </div>
         </div>
-        <div class="col-md-4 text-md-end">August 2018 to Present</div>
-    </div>
+    </section>
 
-    <div class="row mt-3 text-md-start">
-        <h2>Research Interest</h2>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <ul>
-                <li>Analysis</li>
-                <li>Numerical Analysis</li>
-                <li>Applied Mathematics</li>
-            </ul>
+    <section id="cv__research">
+        <h1>Research Interests</h1>
+        <div class="cv__entry">
+            <div class="cv__entry__desc">
+                <ul>
+                    <li>Analysis</li>
+                    <li>Numerical Analysis</li>
+                    <li>Applied Mathematics</li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="row mt-3 text-md-start">
-        <h2>Publications</h2>
-    </div>
+    <section id="cv__publication">
+        <h1>Publications</h1>
+        <div class="cv__entry">
+            <div class="cv__entry__desc">
+                Waddell, L. Phillips J. Liu, T. Dhar, S. An LP-based Characterization of Solvable QAP Instances with
+                Chess-board and Graded Structures. Journal of Combinatorial Optimization.
+                <a href="https://doi.org/10.1007/s10878-023-01044-3">Article</a>
+            </div>
+        </div>
+        <div class="cv__entry">
+            <div class="cv__entry__desc">
+                Dhar, S. Massaro, V. Mir, D. and Ryan, N. Uncertainty in Criminal Justice Algorithms: Simulation
+                Studies of the Pennsylvania Additive Classification Tool. AMS Short Course on Mathematical and
+                Computational Methods for Complex Social Systems.
+                <a href="https://arxiv.org/abs/2112.00301">Article</a> 
+            </div>
+        </div>
+    </section>
 
-    <div class="row">
-        <div class="col">
-            <ul>
-                <li>
-                    Waddell, L. Phillips J. Liu, T. Dhar, S. An LP-based Characterization of Solvable QAP Instances with
-                    Chess-board and Graded Structures. Journal of Combinatorial Optimization. <br/>
-                    <a href="https://doi.org/10.1007/s10878-023-01044-3">Link</a>
-                </li>
-                <li>
-                    Dhar, S. Massaro, V. Mir, D. and Ryan, N. Uncertainty in Criminal Justice Algorithms: Simulation
-                    Studies of the Pennsylvania Additive Classification Tool. AMS Short Course on Mathematical and
-                    Computational Methods for Complex Social Systems. <br/>
-                    <a href="https://arxiv.org/abs/2112.00301">Link</a> 
-                </li>
-            </ul>
+    <section id="cv__teaching">
+        <h1>Teaching Experience</h1>
+        <div class="cv__entry">
+            <div class="cv__entry__title">
+                Grader for Math 331: Algebraic Systems 
+            </div>
+            <div class="cv__entry__date">
+                Fall 2023
+            </div>
+            <div class="cv__entry__desc">
+                Washington University in St. Louis
+            </div>
         </div>
-    </div>
 
-    <div class="row mt-3 text-md-start">
-        <h2>Teaching Experience</h2>
-    </div>
+        <div class="cv__entry">
+            <div class="cv__entry__title">
+                Grader for Math 331: Algebraic Systems 
+            </div>
+            <div class="cv__entry__date">
+                Fall 2023
+            </div>
+            <div class="cv__entry__desc">
+                Washington University in St. Louis
+            </div>
+        </div>
 
-    <div class="row">
-        <div class="col-md-8 text-md-start">
-            <b>Grader for Math 331: Algebraic Systems </b><br/>
-            Washington University in St. Louis
+        <div class="cv__entry">
+            <div class="cv__entry__title">
+                Calculus Study Group Instructor
+            </div>
+            <div class="cv__entry__date">
+                February 2019 to May 2022
+            </div>
+            <div class="cv__entry__desc">
+                Bucknell Teaching &amp; Learning Center
+            </div>
         </div>
-        <div class="col-md-4 text-md-end">
-            Fall 2023
-        </div>
-    </div>
+    </section>
 
-    <div class="row">
-        <div class="col-md-8 text-md-start">
-            <b>Grader for Math 429.2: Linear Algebra</b><br/>
-            Washington University in St. Louis
+    <section id="cv__conference">
+        <h1>Conferences</h1>
+        <div class="cv__entry">
+            <div class="cv__entry__desc">
+                <ul>
+                    <li>SIAM Central States Section, 2023</li>
+                    <li>Upstate New York Statistics Conference, 2021</li>
+                    <li>INFORMS Poster Presentation, 2021</li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-4 text-md-end">
-            Fall 2023
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-8 text-md-start">
-            <b>Calculus Study Group Instructor</b><br/>
-            Bucknell Teaching & Learning Center
-        </div>
-        <div class="col-md-4 text-md-end">
-            February 2019 - May 2022
-        </div>
-    </div>
-
-    <div class="row mt-3 text-md-start">
-        <h2>Conferences</h2>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <ul>
-                <li>SIAM Central States Section, 2023</li>
-                <li>Upstate New York Statistics Conference, 2021</li>
-                <li>INFORMS Poster Presentation, 2021</li>
-            </ul>
-        </div>
-    </div>
+    </section>
 </div>
 
 
-        </div>
-
+        </main>
+        <script>
+            function toggleMenu() {
+                document.querySelector(".navbar__menu-btn").classList.toggle("navbar__menu-btn--close")
+                document.querySelector(".navbar__items--mobile").classList.toggle("navbar__items--show")
+            }
+        </script>
     </body>
 </html>
