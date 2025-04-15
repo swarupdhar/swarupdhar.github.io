@@ -6,33 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/main.css">
-
     </head>
     <body>
-        <header>
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar__logo"><a href="/">Swarup Dhar</a></div>
-                    <div class="navbar__menu-btn" onclick="toggleMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navbar__items">
-                        <li><a href="/posts">Posts</a></li>
-                        <li><a href="/research">Research</a></li>
-                        <li><a href="/cv">CV</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <ul class="navbar__items--mobile">
-                <li><a href="/posts">Posts</a></li>
-                <li><a href="/research">Research</a></li>
+        <nav class="navbar">
+            <div class="navbar__logo"><a href="/">Swarup Dhar</a></div>
+            <ul class="navbar__items">
                 <li><a href="/cv">CV</a></li>
             </ul>
-        </header>
+        </nav>
         <main>
             
 
@@ -154,11 +137,5 @@
 
 
         </main>
-        <script>
-            function toggleMenu() {
-                document.querySelector(".navbar__menu-btn").classList.toggle("navbar__menu-btn--close")
-                document.querySelector(".navbar__items--mobile").classList.toggle("navbar__items--show")
-            }
-        </script>
     </body>
 </html>
